@@ -22,7 +22,9 @@ nav {
   padding: 5px 60px;
   background: #082c40;
   color: white;
-  position: relative;
+  position: absolute;
+  height: 100px;
+  width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -42,6 +44,20 @@ nav {
       padding-right: 40px;
     }
   }
+}
+
+.financeBanner {
+  position: absolute;
+  width: 1440px;
+  height: 137px;
+  left: 0px;
+  top: 100px;
+  background: #282338;
+  border-radius: 0px 0px 0px 50px;
+}
+
+.financeBanner p {
+  color: #FFFFFF;
 }
 
 // page layout
