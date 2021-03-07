@@ -1,25 +1,15 @@
 <template>
 <div>
   <div class='content'>
-    <AppMenu />
-    <FinanceBanner />
+    <PlaceHolderHeader />
+    <!-- <FinanceBanner /> -->
     <Nuxt />
   </div>
 </div>
 </template>
 
 <script>
-import AppMenu from '@/components/AppMenu.vue'
-import FinanceBanner from '@/components/FinanceBanner.vue'
-
-export default {
-  components: {
-    AppMenu,
-    FinanceBanner
-  },
-}
 </script>
-
 
 <style>
 html {
