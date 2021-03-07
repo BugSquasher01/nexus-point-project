@@ -1,11 +1,24 @@
 <template>
   <main class="container">
-    <h1>Home Page</h1>
+    <CarListingsGrid />
   </main>
 </template>
 
 <script>
-export default {}
+import PlaceholderHeader from '@/components/PlaceHolderHeader.vue'
+import FinanceBanner from '@/components/FinanceBanner.vue'
+import CarListingsGrid from '@/components/CarListingsGrid.vue'
+
+// import ListingFeed from '@/components/ListingFeed.vue'
+
+export default {
+  components: {
+    PlaceholderHeader,
+    FinanceBanner,
+    CarListingsGrid
+    // ListingFeed
+  },
+}
 </script>
 
 <style>
