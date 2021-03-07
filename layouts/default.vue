@@ -2,6 +2,7 @@
 <div>
   <div class='content'>
     <AppMenu />
+    <FinanceBanner />
     <Nuxt />
   </div>
 </div>
@@ -9,10 +10,12 @@
 
 <script>
 import AppMenu from '@/components/AppMenu.vue'
+import FinanceBanner from '@/components/FinanceBanner.vue'
 
 export default {
   components: {
-    AppMenu
+    AppMenu,
+    FinanceBanner
   },
 }
 </script>
