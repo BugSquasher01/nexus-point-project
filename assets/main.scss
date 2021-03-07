@@ -16,7 +16,7 @@ footer {
   height: 50px;
 }
 
-// nav
+// Top of the page navigation bar styling
 
 nav {
   padding: 5px 60px;
@@ -62,22 +62,21 @@ nav {
   color: #FFFFFF;
 }
 
-// page layout
-
+// Main card layout styling
 .row {
   margin: 30px 0 60px;
-  width: 100%;
+  width: 1029px;
+  max-width: 100%;
+  height: 354px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 0px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 
-// buttons
-
+// "View" car button styling
 button {
-  background: #098191;
   transition: background ease 0.25s;
   border-radius: 5px;
   display: inline-block;
@@ -85,7 +84,6 @@ button {
   padding: 0.75rem 1.5rem;
   margin: 0;
   text-decoration: none;
-  color: #ffffff;
   font-size: 1.2rem;
   cursor: pointer;
   text-align: center;
@@ -94,7 +92,7 @@ button {
 }
 
 button:hover {
-  background: #63b6b8;
+  background: #7572FF;
 }
 
 button:focus {
@@ -102,12 +100,17 @@ button:focus {
   outline-offset: -4px;
 }
 
+
 .ghost {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  background: white;
+  background: #7572FF;
   border: 1px solid #555;
   color: black;
+  height: 40px;
+  width: 85px;
+  left: 71.5px;
+  top: 0px;
 }
 
 .ghost:hover {
@@ -326,27 +329,33 @@ table th {
   }
 }
 
-// restaurant info
+// Car Listings main card view
 
-section.restaurantinfo {
-  padding: 20px 200px;
+section.carListingsMainGrid {
+  padding: 170px 437px;
 
-  .items {
-    height: 250px;
-    border-radius: 5px;
+  // Car images per card
+  .carImage {
+    background: antiquewhite;
+    max-width: 100%;
+    height: auto;
     background-size: cover;
     position: relative;
     box-shadow: 2px 6px 6px 0 rgb(215, 215, 215);
+    border-radius: 16px;
   }
 
   .iteminfo {
-    background: white;
+    background: #FFFFFF;
     width: 100%;
-    padding: 15px;
+    height: 114px;
+    padding: 10px 0px;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
   }
 }
 
