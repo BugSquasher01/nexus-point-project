@@ -9,8 +9,6 @@ import PlaceholderHeader from '@/components/PlaceHolderHeader.vue'
 import FinanceBanner from '@/components/FinanceBanner.vue'
 import CarListingsGrid from '@/components/CarListingsGrid.vue'
 
-// import ListingFeed from '@/components/ListingFeed.vue'
-
 export default {
   components: {
     PlaceholderHeader,
@@ -22,5 +20,4 @@ export default {
 </script>
 
 <style>
-
 </style>
