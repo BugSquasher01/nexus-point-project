@@ -39,7 +39,7 @@ nav {
   }
 }
 
-// Finance Banner (top of page) styling (currently not used)
+// Finance Banner (top of page) styling (**not in use**)
 .financeBanner {
   position: absolute;
   width: 1440px;
@@ -104,8 +104,9 @@ button:focus {
   border: 1px solid #555;
   height: 40px;
   width: 85px;
-  left: 71.5px;
-  top: 0px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 .ghost:hover {
@@ -119,7 +120,7 @@ button:focus {
 
 // Overall card grid view of car listings
 section.carListingsMainGrid {
-  padding: 200px 437px;
+  padding: 267px 380px;
 
   // Car images per within each card
   .carImage {
@@ -229,3 +230,5 @@ section.carListingsMainGrid {
   line-height: 18px;
   /* identical to box height, or 150% */
 }
+
+/** Responsive media queries **/
