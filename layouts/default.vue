@@ -44,7 +44,7 @@ h2,
 h3,
 h4 {
   font-family:
-    'Poppins',
+    'SF Pro Text',
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
