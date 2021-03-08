@@ -1,3 +1,4 @@
+<!-- Placeholder header -->
 <template>
     <nav>
         <ul>
