@@ -128,6 +128,7 @@ export const state = () => ({
             shortDescription: "1.2 PureTech 100 GT-Line",
             img: "row3_image3.jpg",
             monthlyPrice: 550.90 + " /mo (PCP)",
+            fullPrice: 23300,
             id: "70ceec44-3ccb-4f92-b149-0ebe2c10704b",
             description: ""
           },
