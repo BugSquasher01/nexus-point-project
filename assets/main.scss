@@ -1,23 +1,16 @@
+/*** CSS Styling for the Listings Feed grid ***/
+
 body,
 button,
 input,
 select,
 textarea {
-  font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "SF Pro Text", "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+    background: #E5E5E5;;
 }
 
-// sticky footer
-.content {
-  min-height: calc(100vh - 50px);
-}
-
-footer {
-  height: 50px;
-}
-
-// Top of the page navigation bar styling
-
+// Top of the page (placeholder) navigation bar styling
 nav {
   padding: 5px 60px;
   background: #082c40;
@@ -30,7 +23,7 @@ nav {
   justify-content: space-between;
 
   a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
   }
 
@@ -46,8 +39,7 @@ nav {
   }
 }
 
-// Finance Banner (top of page) styling
-
+// Finance Banner (top of page) styling (currently not used)
 .financeBanner {
   position: absolute;
   width: 1440px;
@@ -62,9 +54,9 @@ nav {
   color: #FFFFFF;
 }
 
-// Main card layout styling
+// Each specific row on the card grid view
 .row {
-  margin: 30px 0 60px;
+  margin: 15px 0 0px;
   width: 1029px;
   max-width: 100%;
   height: 354px;
@@ -92,7 +84,8 @@ button {
 }
 
 button:hover {
-  background: #7572FF;
+  background: #FFFFFF;
+  color: #000000;
 }
 
 button:focus {
@@ -100,13 +93,15 @@ button:focus {
   outline-offset: -4px;
 }
 
-
-.ghost {
-  font-size: 0.9rem;
+.viewCarButton {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
   padding: 0.5rem 1rem;
   background: #7572FF;
+  color: #FFFFFF;
+  border-radius: 16px;
   border: 1px solid #555;
-  color: black;
   height: 40px;
   width: 85px;
   left: 71.5px;
@@ -122,234 +117,27 @@ button:focus {
   padding: 0.5rem 1rem;
 }
 
-// form elements
-
-input[type="number"] {
-  width: 50px;
-  margin-right: 10px;
-}
-
-.quantity {
-  display: flex;
-  margin: 20px 0 40px;
-}
-
-fieldset {
-  margin: 20px 0;
-  border: 1px solid #ddd;
-}
-
-.label {
-  margin: 15px 0;
-  line-height: 1.6;
-
-  span {
-    font-size: 14px;
-    padding: 8px 12px;
-    border-radius: 1000px;
-    background: #d50813;
-    color: white;
-    font-weight: bold;
-  }
-}
-
-select {
-  padding: 3px;
-}
-
-footer {
-  background: black;
-  width: 100%;
-  padding: 10px 30px;
-  color: white;
-  text-align: center;
-
-  a,
-  a:visited,
-  a:active {
-    color: #c4c3ec;
-    font-weight: bold;
-  }
-}
-
-// table styles
-
-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 40px 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed;
-  border-radius: 5px;
-}
-
-table caption {
-  font-size: 1.5em;
-  margin: 0.5em 0 0.75em;
-}
-
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: 0.35em;
-}
-
-table th,
-table td {
-  padding: 0.625em;
-  text-align: center;
-}
-
-table th {
-  font-size: 0.85em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
-
-  table caption {
-    font-size: 1.3em;
-  }
-
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: 0.625em;
-  }
-
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: 0.8em;
-    text-align: right;
-  }
-
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  table td:last-child {
-    border-bottom: 0;
-  }
-}
-
-// comma separated lists
-
-.comma:not(:first-child) {
-  margin-left: -0.15rem;
-}
-
-.comma:empty {
-  display: none;
-}
-
-.comma:not(:first-child):before {
-  content: ", ";
-  margin: 0.15rem;
-}
-
-// numerical styles
-
-.smallnum {
-  position: absolute;
-  border-radius: 1000px;
-  background: white;
-  color: black;
-  top: 9px;
-  right: 33px;
-  width: 25px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  font-size: 10px;
-  padding: 6px 10px;
-  font-weight: bold;
-}
-
-// toast
-
-.toast {
-  background: #a8060e;
-  color: white;
-  border-radius: 3px;
-  padding: 12px 24px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center;
-
-  a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-  }
-}
-
-/* Page-specific styles */
-
-.restaurant {
-  .restaurantheading {
-    margin: 100px 0 20px 200px;
-    display: flex;
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 30px;
-    margin-right: 40px;
-  }
-
-  .filter {
-    padding-right: 200px;
-  }
-}
-
-// Car Listings main card view
-
+// Overall card grid view of car listings
 section.carListingsMainGrid {
-  padding: 170px 437px;
+  padding: 200px 437px;
 
-  // Car images per card
+  // Car images per within each card
   .carImage {
-    background: antiquewhite;
+    background: #FFFFFF;
     max-width: 100%;
     height: auto;
     background-size: cover;
     position: relative;
-    box-shadow: 2px 6px 6px 0 rgb(215, 215, 215);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
   }
 
-  .iteminfo {
+  // Text info per car card
+  .iteminfoContainer {
     background: #FFFFFF;
     width: 100%;
-    height: 114px;
-    padding: 10px 0px;
+    height: 107px;
+    padding: 10px 5px;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -359,23 +147,85 @@ section.carListingsMainGrid {
   }
 }
 
-//cart page
+// Car card info
+// Title of car (Line 1)
+.carListingTitle {
+  position: static;
+  left: calc(50% - 313px/2);
+  top: 0px;
+  margin-left: 5px;
 
-.cart.container {
-  padding: 100px;
-  max-width: 1000px;
-  margin: 0 auto;
+  /* Desktop/Body/Paragraph */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-  h2 {
-    text-align: center;
-  }
+  /* Text/Black */
+  color: #000000;
+}
 
-  .total {
-    font-weight: bold;
-  }
+// Extra car description (Line 2)
+.carListingDescription {
+  position: static;
+  margin-left: 5px;
 
-  .emptycart {
-    text-align: center;
-    line-height: 2;
-  }
+  /* All/Body/Caption */
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  /* identical to box height, or 150% */
+
+  /* Text/Grey */
+  color: #55595D;
+}
+
+// Monthly finance price (Line 3)
+.carListingMonthlyPrice {
+  position: static;
+  width: 146.5px;
+  height: 24px;
+  margin-top: 5px;
+  margin-left: 5px;
+
+  /* All/Headings/Heading 4 */
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+// Full price of vehicle (Line 4)
+.carListingFullPrice {
+  display: inline;
+  position: static;
+  width: 48px;
+  height: 18px;
+  margin-left: 5px;
+
+  /* All/Body/Caption */
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  /* Text/Black */
+  color: #000000;
+}
+
+.calculateFinanceLink {
+  color: #7572FF;
+
+  /* All/Body/Caption */
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
 }
